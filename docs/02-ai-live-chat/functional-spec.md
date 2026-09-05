@@ -15,7 +15,9 @@ Web sitesine entegre RAG (Retrieval-Augmented Generation) tabanlı AI canlı des
 ---
 
 **3. API Entegrasyon Detayı**
+
 AI, ticket oluştururken Phase 1'deki POST /api/v1/tickets servisine aşağıdaki JSON yükünü otomatik iletir:
+
 
 {
   "title": "AI Chat - [Müşterinin Konusu]",
