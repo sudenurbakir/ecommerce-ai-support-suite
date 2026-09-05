@@ -26,18 +26,3 @@ AI, ticket oluştururken Phase 1'deki POST /api/v1/tickets servisine aşağıdak
   "customer_email": "musteri@example.com",
   "source": "AI_Live_Chat"
 }
-## 4. Akış Mantığı (Fallback Logic)
-
-```text
-  [ Müşteri Soru Sordu ]
-            │
-            ▼
-   [ AI Cevap & Skor Üretti ]
-            │
-    ┌───────┴───────┐
-    │               │
- (Skor >= %80)   (Skor < %80)
-    │               │
-    ▼               ▼
-[ Müşteriye   [ Ticket Açma ]
- Yanıt Ver ]   [ Seçeneği Sun ] ──► Müşteri Onayladı ──► [ Phase 1 Ticket API Tetikle ]
